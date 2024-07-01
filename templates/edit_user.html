@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+</head>
+<body>
+    <form action="{{ url_for('edit_user',user_id=user.id)}}" method="post">
+        <input placeholder="Enter Your Name" value="{{ user.name }}" name="uname" style="margin: 10px ; ">  <br>
+        <input placeholder="Enter Your email" value="{{user.email}}" name="uemail" style="margin: 10px; ">  <br>
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
